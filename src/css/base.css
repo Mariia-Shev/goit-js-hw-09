@@ -50,3 +50,40 @@ main:has(.back-link) {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  row-gap: 8px;
+}
+.feedback-form input {
+  height: 40px;
+  border-color: #808080;
+  border-radius: 4px;
+  outline: transparent;
+}
+.feedback-form textarea {
+  height: 80px;
+  border-color: #808080;
+  border-radius: 4px;
+  outline: transparent;
+  resize: none;
+}
+.feedback-form button {
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+}
