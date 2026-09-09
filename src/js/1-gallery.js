@@ -1,6 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-console.log('fuck');
 
 const images = [
   {
@@ -96,17 +95,9 @@ images.forEach(({ preview, original, description }) => {
 });
 gallery.appendChild(fragment);
 
-gallery.addEventListener('click', popUp);
-
 const lightbox = new SimpleLightbox('.gallery a', {
-  captions: true,
   captionSelector: 'img',
-  captionType: 'attr',
   captionsData: 'alt',
   captionDelay: 250,
 });
-lightbox.on('show.simplelightbox', popUp);
-
-function popUp(event) {
-  event.preventDefault();
-}
+lightbox.on('show.simplelightbox');
